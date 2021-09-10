@@ -1,0 +1,32 @@
+{"message":"Error connecting to DB ! Error MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017","level":"info","timestamp":"2021-08-16T11:25:38.607Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:30:09.356Z"}
+{"message":"/api/userssss not found","level":"error","timestamp":"2021-08-16T11:30:20.527Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:40.201Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:40.785Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:40.993Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:41.168Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:41.352Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:41.543Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:41.761Z"}
+{"message":"/ not found","level":"error","timestamp":"2021-08-16T11:30:41.889Z"}
+{"message":"/dsfdsrf not found","level":"error","timestamp":"2021-08-16T11:30:45.126Z"}
+{"message":"/dsfdsrf not found","level":"error","timestamp":"2021-08-16T11:30:45.655Z"}
+{"message":"/dsfdsrf not found","level":"error","timestamp":"2021-08-16T11:30:45.822Z"}
+{"message":"/dsfdsrf not found","level":"error","timestamp":"2021-08-16T11:30:45.992Z"}
+{"message":"/api/ not found","level":"error","timestamp":"2021-08-16T11:30:52.268Z"}
+{"message":"/api/ not found","level":"error","timestamp":"2021-08-16T11:30:53.047Z"}
+{"message":"/api/ not found","level":"error","timestamp":"2021-08-16T11:30:53.238Z"}
+{"message":"/api/ not found","level":"error","timestamp":"2021-08-16T11:30:53.423Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:31:12.293Z"}
+{"message":"Error connecting to DB ! Error /users ReferenceError: df is not defined","level":"error","timestamp":"2021-08-16T11:31:18.311Z"}
+{"level":"error","timestamp":"2021-08-16T11:31:18.312Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:33:44.114Z"}
+{"message":"/api/addusers not found","level":"error","timestamp":"2021-08-16T11:33:45.380Z"}
+{"message":"/api/addusers not found","level":"error","timestamp":"2021-08-16T11:34:02.762Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:34:39.844Z"}
+{"message":"Error connecting to DB ! Error /users ReferenceError: trdue is not defined","level":"error","timestamp":"2021-08-16T11:34:51.610Z"}
+{"level":"error","timestamp":"2021-08-16T11:34:51.611Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:35:12.197Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:41:02.586Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:41:23.542Z"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T11:46:11.667Z"}

@@ -1,0 +1,4 @@
+{"message":"Error connecting to DB ! Error MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:7017","level":"info"}
+{"message":"Connected to DB ","level":"info"}
+{"message":"Connected to DB ","level":"info"}
+{"message":"Connected to DB ","level":"info","timestamp":"2021-08-16T09:46:03.253Z"}

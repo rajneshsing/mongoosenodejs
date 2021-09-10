@@ -1,0 +1,5 @@
+{"message":"Error connecting to DB ! Error /users TypeError: User.finds is not a function","level":"error"}
+{"level":"error"}
+{"message":"Error connecting to DB ! Error MongoParseError: Invalid connection string ","level":"error"}
+{"message":"Error connecting to DB ! Error /users TypeError: User.finds is not a function","level":"error"}
+{"level":"error"}
