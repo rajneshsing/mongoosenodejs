@@ -284,6 +284,7 @@ const defaultuser =  async(req, res, next) => {
 };
 
 const infouser =  async(req, res, next) => {
+	let movie1;
 	try{
 		
 			
@@ -294,19 +295,24 @@ const infouser =  async(req, res, next) => {
 			console.log(movie1.actors[1].name); // 'Linda Hamilton'
 				*/
 				
-			let movie = await Movie.findOne();
+			/*let movie = await Movie.findOne();
 			// Populate the actors
 			await movie.populate('actors').execPopulate();
 			 // 'James Cameron'
 			 console.log(movie.director.name);
 			console.log(movie.actors[0].name); // 'Arnold Schwarzenegger'
-			console.log(movie.actors[1].name); //
-		
+			console.log(movie.actors[1].name); //*/
+  
+	  movie1=await Movie.findOne({},{_id:0}).populate([
+		{ path: "director", select: { _id:0, name: 1 } },
+		{ path: "actors", select: { _id:0, name: 1 } }
+	  ]) ;
+		console.log(movie1);
 	}catch(error)
 	{
 		return res.json(error.message);
 	}
-	return res.status(200).json({message:movie1});
+	return res.status(200).json(movie1);
 };
 
 
