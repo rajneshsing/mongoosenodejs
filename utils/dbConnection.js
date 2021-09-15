@@ -32,11 +32,13 @@ const dbConnect = async () => {
 module.exports = { dbConnect: dbConnect, dbConnection: this.dbConnection };*/
 const mongoose = require("mongoose");
 const chalk = require("chalk");
+
 const logger = require('./../config/logger');
 const mongoUrl = 'mongodb://127.0.0.1:27017/testdbss';//process.env.MONGO_URL;//'mongodb://127.0.0.1:27017/testdb';
+//const mongoUrl = "mongodb+srv://rajneshmmm:Rajnes123s@cluster0.sw9kc.mongodb.net/testdbss?retryWrites=true";
 const dbConnect=mongoose.connect(
     mongoUrl,
-    { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false },
+    { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: true },
     (error) => {
         if (error)
 		{

@@ -41,7 +41,7 @@ const logger = createLogger({
             options: {
                 useUnifiedTopology: true
             },
-            collection: 'babaji',
+            collection: 'name',
             format: format.combine(format.timestamp(), format.json())
         })
     ]

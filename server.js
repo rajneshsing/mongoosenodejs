@@ -24,31 +24,21 @@ const port = process.env.PORT || 3000;
 const app = express();
 const server = http.createServer(app);
 app.use(express.json({ limit: "1000MB" }));
-app.use(httpLogger)
+//app.use(httpLogger)
+app.use((req, res, next) => {
+  logger.info(req.body);
+  let oldSend = res.send;
+  res.send = function (data) {
+    logger.info(JSON.parse(data));
+    oldSend.apply(res, arguments);
+  }
+  next();
+})
 app.use(routes);
-/*const mongoUrl = 'mongodb://127.0.0.1:27017/testdbss';//process.env.MONGO_URL;//'mongodb://127.0.0.1:27017/testdb';
-console.log(`server ${mongoUrl}`)
-mongoose.connect(
-    mongoUrl,
-    { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false },
-    (error) => {
-        if (error)
-		{
-		logger.info(`Error connecting to DB ! Error ${error}`);
-            console.log(
-                chalk.bgRed.black("Error connecting to DB ! Error : ", error) );
-		}
-        else {
-            console.log(chalk.bgGreen.black("Connected to DB "));
-			logger.info(`Connected to DB `);
-            //   server.close();
-            server.listen(port, () => {
-                console.log("Server started on Port : ", port);
-                app.use("/", routes);
-            });
-        }
-    }
-);*/
+
+
+
+
 
 
 app.use((req, res, next) => {
