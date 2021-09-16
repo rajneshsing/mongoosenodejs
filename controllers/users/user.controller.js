@@ -2,6 +2,7 @@ const chalk = require("chalk");
 const User = require("../../models/user");
 const { Story, Person } = require("../../models/story");
 const Character = require("../../models/character.js");
+const Inventory = require("../../models/inventory");
 const { Movie, Info } = require("../../models/movie");
 const httpStatus = require('http-status');
 const errorFunction = require("./../../utils/errorFunction");
@@ -312,8 +313,10 @@ const infouser =  async(req, res, next) => {
 		//movie1=await Character.find().all('name',['Worf'])
 		
 		//movie1=await Character.find().where('age').gt(24)	;
-		movie1=await Character.find().and([{ name: 'Worf' }, { age: 24 }]).select('-_id -__v');
-			
+		//movie1=await Character.find().and([{ name: 'Worf' }, { age: 24 }]).select('-_id -__v');
+		//await Inventory.create({"item" : "ABC1", sizes: [ "S", "M", "L"] });
+		//movie1=await Inventory.aggregate( [ { $unwind : "$sizes" } ] )
+
 	}catch(error)
 	{
 		return res.json(error.message);
